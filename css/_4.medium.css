@@ -1,0 +1,15 @@
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+ .top-bar a {
+    font-size: 1rem;
+ }   
+ .hero .hero2 {
+    margin-bottom: -7%;
+    width: 50%;
+}
+
+.hero .hero3 {
+    width: calc((50%/34)*100);
+}
+}

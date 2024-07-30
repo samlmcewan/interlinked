@@ -1,0 +1,27 @@
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    #main-nav .nav-div {
+        width: 2px;
+        height: 1rem;
+        background-color: var(--yellow);
+    }
+    .logo-top {
+        width: 200px;
+    }
+    #main-nav .active a {
+        color: var(--green);
+   }
+   #main-nav .active {
+    background-color: var(--black);
+}
+.hero .hero2 {
+    width: 35%;
+    margin-bottom: -5%;
+}
+
+.hero .hero3 {
+    width: calc((35%/34)*100);
+}
+}
+        

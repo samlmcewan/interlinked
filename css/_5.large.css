@@ -1,0 +1,17 @@
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .top-bar .container {
+        padding-right: calc(var(--bs-gutter-x)* .5)!important;
+    }
+
+    .hero .hero2 {
+        margin-bottom: -7%;
+        width: 50%;
+    }
+    
+    .hero .hero3 {
+        width: calc((50%/34)*100);
+    }
+
+}
