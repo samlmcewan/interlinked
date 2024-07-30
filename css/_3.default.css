@@ -52,7 +52,7 @@ body {
     transition: all .3s;
 }
 #main-nav .nav-item:hover a{
-    color: var(--blue);
+    color: var(--green);
 }
 #main-nav .nav-item:active a{
     color: var(--red);
@@ -240,4 +240,17 @@ body {
     z-index: 999999;
     /* width: calc(220%); */
     width: calc((75%/34)*100);
+}
+
+/*--------------------------------------------------------------
+# Our Companies
+--------------------------------------------------------------*/
+
+.our-companies .loop {
+    width: 150vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.our-companies .loop:nth-of-type(1) {
+    margin-top: 0;
 }

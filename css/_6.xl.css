@@ -10,7 +10,7 @@
         width: 200px;
     }
     #main-nav .active a {
-        color: var(--green);
+        color: var(--blue);
    }
    #main-nav .active {
     background-color: var(--black);
