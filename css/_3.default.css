@@ -423,3 +423,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/*--------------------------------------------------------------
+# Accreditations
+--------------------------------------------------------------*/
+
+.our-team {
+    background-color: var(--lightGray);
+}
+
+.our-team .section-title h2 {
+    background-color: var(--lightGray);
+}
+
+.our-team p {
+    margin-bottom: 2rem;
+}
