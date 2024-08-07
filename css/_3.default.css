@@ -413,3 +413,13 @@ body {
 .latest-projects .card:hover a.btn-link svg g, .latest-projects .card:hover a.btn-link svg polyline {
     fill: var(--blue)!important;
 }
+
+/*--------------------------------------------------------------
+# Accreditations
+--------------------------------------------------------------*/
+
+.accreditations .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
