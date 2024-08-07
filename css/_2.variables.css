@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-
+    --white: #ffffff;
     --black: #000000;
     --darkBlue: #253e51;
     --blue: #3571b8;
@@ -9,7 +9,5 @@
     --lightGray: #f4f4f4;
     --red: #db1f29;
     --green: #62b847;
-
-    --hero-svg-size: 75%;
     
 }

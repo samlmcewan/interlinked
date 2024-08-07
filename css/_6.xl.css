@@ -1,6 +1,9 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .section-title h2 {
+        font-size: 3rem;
+    }
     #main-nav .nav-div {
         width: 2px;
         height: 1rem;
@@ -23,5 +26,18 @@
 .hero .hero3 {
     width: calc((35%/34)*100);
 }
+.loops {
+    /* margin-top: 3rem; */
+}
+.loops a {
+   
+    width: 33%;
+}
+.our-companies .loops {
+    position: relative;
+    width: 75vw;
+}
+
+
 }
         
