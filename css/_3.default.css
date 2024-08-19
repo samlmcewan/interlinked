@@ -454,3 +454,237 @@ body {
     fill: var(--blue)!important;
 }
 
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-cutout {
+    background-color: var(--black);
+   margin-top: -3rem;
+   overflow: hidden;
+   
+}
+.footer-cutout svg {
+    margin-top: -5rem;
+}
+.footer-cutout.gray svg g {
+    fill: var(--lightGray);
+}
+.footer-cutout.blue svg g {
+    fill: var(--blue);
+}
+.footer-cutout.white svg g {
+    fill: var(--white);
+}
+
+.logo-footer svg g path {
+    fill: var(--white);
+}
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: .875rem;
+}
+
+#footer .social-logos a:hover svg g rect {
+    fill: var(--gray3)!important;
+}
+
+
+    footer a span {
+        color: var(--yellow);
+    }
+
+    footer .footer-title {
+        color: var(--yellow);
+        font-weight: 400;
+    }
+
+
+
+    footer a {
+        color: var(--gray3);
+        font-size: .875rem;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+        footer a:hover {
+            /* text-decoration: underline; */
+            color: var(--yellow);
+        }
+
+            footer a:hover span {
+                color: var(--yellow);
+            }
+
+
+.footer-title {
+    font-size: 1rem;
+    /*font-weight: 500;*/
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    padding-left: 2.3rem;
+    text-indent: -1.1rem;
+}
+footer .fa-angle-right path, footer .fa-angle-down path {
+    fill: var(--yellow);
+}
+footer .fa-angle-right {
+   height: 20px;
+}
+footer .fa-angle-down {
+    width: 20px;
+}
+footer .fa-chevron-right {
+    /*color: #ffffff;*/
+    /*color: #ffffff;*/
+    padding-right: 0.2rem;
+}
+
+.shfooter .collapse {
+    display: inherit;
+}
+
+.shfooter i::before {
+    color: var(--gray3);
+}
+
+
+.resize {
+    text-align: center;
+}
+
+.resize {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+/* Social footer  */
+footer .fa-brands {
+    width: 7%;
+}
+
+footer .fab:before {
+    font-size: 1.1rem;
+}
+
+.social-footer a:hover svg {
+    /*color: var(--links); */
+    animation: icons-rise 0.3s linear forwards;
+}
+
+#footer .social-logos svg {
+   width: 30px;
+   height: 30px;
+   transition: all .3s;
+}
+#footer .social-logos svg g rect{
+   
+    transition: all .3s;
+ }
+#footer h4 {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+@keyframes icons-rise {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translate(2.5px, -2.5px);
+    }
+}
+
+.social-footer a:hover {
+    text-decoration: none;
+}
+
+    .social-footer a:hover span {
+        text-decoration: underline;
+    }
+
+@keyframes arrow-right {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+footer p, footer li {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+footer hr:not([size]) {
+    height: 1px;
+    color: var(--gray2);
+    opacity: .4;
+}
+
+footer ul li {
+    padding-left: 0;
+    text-indent: 0;
+    /* remove this if issue 616 617 */
+    display: flex;
+    align-items: center;
+}
+footer a {
+    transition: all .3s ease-in;
+}
+
+footer .social-icons svg {
+    width: 1.875rem;
+}
+footer .social-icons svg:hover g path:nth-of-type(1) {
+    fill: var(--yellow)!important;
+}
+footer .social-icons svg:hover g path:nth-of-type(2), footer .social-icons svg:hover g path:nth-of-type(3) {
+    fill: var(--black)!important;
+}
+footer .social-icons svg:hover g path {
+    transition: all .3s ease-in;
+}
+
+footer .fa-chevron-right {
+    display: none;
+}
+
+.footer-title {
+    margin-bottom: 0;
+}
+
+.shfooter ul {
+    margin-bottom: 0;
+}
+
+.shfooter .collapse {
+    display: none;
+}
+
+    .shfooter .collapse.show {
+        display: block;
+    }
+
+.shfooter .title .fa-angle-down,
+.shfooter .title[aria-expanded=true] .fa-angle-right {
+    display: none;
+}
+
+.shfooter .title[aria-expanded=true] .fa-angle-down {
+    display: block;
+}
+
+.shfooter .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+}

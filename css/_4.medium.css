@@ -37,5 +37,12 @@
     margin-right: 0;
 }
 
+/* Footer  */
+.footer-cutout svg {
+    margin-top: -10rem;
+}
+.shfooter .collapse {
+    display: none;
+}
 
 }

@@ -18,5 +18,10 @@
         font-size: 2rem;
     }
 
+    .footer-cutout svg {
+        margin-top: -10rem;
+        width: 60%;
+    }
+
 
 }

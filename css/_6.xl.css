@@ -1,6 +1,15 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+
+    .styled-line {
+        display: block;
+        border-top: 4px solid;
+        width: 160px;
+        margin: 20px 0;
+        border-color: var(--gray);
+    }
+
     .section-title h2 {
         font-size: 3rem;
     }
@@ -38,6 +47,46 @@
     width: 75vw;
 }
 
+.footer-cutout svg {
+    margin-top: -15rem;
+    width: 55%;
+}
+/* Footer - XLarge Devices */
+footer, footer a {
+    font-size: 1.125rem;
+}
+.shfooter .collapse {
+    display: block;
+    }
+    footer .fa-chevron-right {
+    display: inline-block;
+    }
+    footer ul li {
+    margin-bottom: 10px;
+    
+    }
+    footer ul li span {
+        display: inline-block;
+    }
+    footer ul li a:hover span {
+        animation: arrow-right 0.3s linear forwards; 
+              
+          }
+      
+      @keyframes arrow-right {
+        from {
+          transform: translateX(0px); }
+        to {
+          transform: translateX(2px); } 
+          
+      }
+    
+      #footer .footer-title {
+        font-size: 1.5rem;
+      }
+      .footer-logo-desktop {
+        margin-top: -1rem;
+      }
 
 }
         
