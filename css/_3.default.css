@@ -13,6 +13,10 @@ body {
     font-weight: 400;
 }
 
+p {
+    font-weight: 300;
+}
+
 .section-title {
     display: flex;
     align-items: center;
@@ -452,6 +456,48 @@ body {
 }
 .contact-us-img svg:hover g path:nth-of-type(1), .contact-us-img svg:hover g path:nth-of-type(2), .contact-us-img svg:hover g path:nth-of-type(3), .contact-us-img svg:hover g path:nth-of-type(4)  {
     fill: var(--blue)!important;
+}
+
+/*--------------------------------------------------------------
+# Hero inner
+--------------------------------------------------------------*/
+
+.hero-inner .svg-container {
+    position: relative;
+    padding-top: 3rem;
+}
+.hero-inner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 31%;
+    height: auto;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    z-index: 9999999;
+    text-transform: uppercase;
+}
+.hero-inner .inner-h1 {
+    position: absolute;
+    top: 1.5rem;
+    background-color: var(--innerColour);
+    padding: .75rem 1.25rem;
+    border-radius: 3rem;
+}
+.hero-inner .inner-h1 h1 {
+    color: #ffffff;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 1.125rem;
 }
 
 

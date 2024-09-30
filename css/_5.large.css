@@ -23,5 +23,18 @@
         width: 60%;
     }
 
+    .hero-inner p {
+        top: 47%;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        width: 29%;
+    }
+
+    .hero .hero2 {
+        margin-top: 4rem;
+    }
+    
+    
+
 
 }

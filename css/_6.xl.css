@@ -35,6 +35,26 @@
 .hero .hero3 {
     width: calc((35%/34)*100);
 }
+.hero-inner p {
+    top: 47%;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    width: 20%;
+}
+.hero-inner .svg-container {
+    padding-top: 0;
+}
+.hero-inner .inner-h1 {
+    
+    top: calc(-5vh + 50%);
+    right: 3rem;
+    transform: translateY(-50%);
+}
+.hero-inner .inner-h1 h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: .2rem;
+}
 .loops {
     /* margin-top: 3rem; */
 }

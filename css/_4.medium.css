@@ -37,6 +37,16 @@
     margin-right: 0;
 }
 
+.hero-inner p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.hero .hero2 {
+    margin-top: 3rem;
+}
+
+
 /* Footer  */
 .footer-cutout svg {
     margin-top: -10rem;
