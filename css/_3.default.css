@@ -437,7 +437,7 @@ z-index: 9;
 }
 
 .latest-projects .card-title .sub {
-    color: var(--lightGray);
+    color: var(--gray);
     font-weight: 600;
     font-size: 1.25rem;
     text-transform: uppercase;
