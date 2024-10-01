@@ -67,6 +67,44 @@
     width: 75vw;
 }
 
+
+.service-cards .card h3 {
+    transition: all .3s ease;
+}
+.service-cards .card .card-body {
+    transition: all .6s ease;
+}
+
+.service-cards .card:hover .card-btn, .service-cards .card.active .card-btn {
+    visibility: hidden;
+}
+.service-cards .card:hover h3, .service-cards .card.active h3 {
+    color: #ffffff;
+}
+
+.service-cards .card .card-body h3 {
+    font-size: 1.25rem;
+}
+
+.service-cards .card .card-body {
+    border: 6px solid var(--lightGray);
+    width: 100%;
+    padding: 5rem 4rem 2rem 4rem;
+    background-color: #ffffff;
+}
+
+.quote-image .container-fluid {
+    height: 50vh;
+}
+
+.quote-image .quote-text p {
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+
 .footer-cutout svg {
     margin-top: -15rem;
     width: 55%;

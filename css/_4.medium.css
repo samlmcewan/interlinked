@@ -46,6 +46,17 @@
     margin-top: 3rem;
 }
 
+.quote-image .container-fluid {
+    height: 40vh;
+}
+
+.quote-image .quote-text p {
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 
 /* Footer  */
 .footer-cutout svg {

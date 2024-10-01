@@ -4,12 +4,13 @@
     --white: #ffffff;
     --black: #000000;
     --darkBlue: #253e51;
-    --blue: #3571b8;
+    /* --blue: #3571b8; */
+    --blue: #0066b0;
     --gray: #6d7a7b;
     --lightGray: #f4f4f4;
     --red: #db1f29;
     --green: #62b847;
 
-    --innerColour: #3571b8; 
+    --innerColour: #0066b0; 
     
 }

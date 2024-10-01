@@ -53,6 +53,10 @@ p {
   a.btn-link:hover {
     color: var(--blue)!important;
   }
+
+  .bg-innerColour {
+    background-color: var(--innerColour)!important;
+  }
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -373,7 +377,7 @@ p {
     text-transform: uppercase;
 }
 
-.latest-projects .card-body a.btn-link, .about-us-inner a.btn-link {
+a.btn-link {
     text-decoration: none;
     padding: 0;
     color: var(--gray);
@@ -447,6 +451,26 @@ p {
     margin-bottom: 2rem;
 }
 
+
+.testimonials  {
+    background-color: var(--innerColour);
+}
+
+.testimonials .section-title h2 {
+    background-color: var(--innerColour);
+    color: #ffffff;
+}
+
+.testimonials p {
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.testimonials .section-title .line {
+    background-color: #ffffff;
+    opacity: .67;
+}
+
 /*--------------------------------------------------------------
 # Contact us image (homepage)
 --------------------------------------------------------------*/
@@ -505,6 +529,129 @@ p {
 
 .cutout-white {
     background-color: #ffffff!important;
+}
+/*--------------------------------------------------------------
+# Landing Cards
+--------------------------------------------------------------*/
+.service-cards .card {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.service-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    border-radius: 0;
+    height: 100%!important;
+    max-height: 100%;
+    background-color: transparent;
+}
+
+.service-cards .card > *{
+    transition: all .6s ease;
+}
+
+.card-img-container {
+    background-color: var(--innerColour);
+    border: 5px solid var(--innerColour);
+    border-radius: 50%;
+    padding: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: -4rem;
+    z-index: 1;
+    position: relative;
+
+}
+ .card-img-container img {
+    max-width: 75%;
+    
+    height: 55%;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.service-cards .card .card-body {
+    border: 6px solid var(--lightGray);
+    width: 100%;
+    padding: 5.5rem 3rem 3rem 3rem;
+    background-color: #ffffff;
+}
+.service-cards .card .card-body h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.service-cards .card .card-body .card-btn {
+    background-color: var(--lightGray);
+    padding: .9rem 1.35rem;
+}
+.service-cards .card .card-body .card-btn p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.service-cards .card:hover .card-body, .service-cards .card.active .card-body{
+    border-color: var(--innerColour);
+}
+
+.service-cards .card:hover h3, .service-cards .card.active h3{
+    color: var(--innerColour)!important;
+}
+/*--------------------------------------------------------------
+# Quote image
+--------------------------------------------------------------*/
+.quote-image .container-fluid {
+    position: relative;
+    height: 50vh;
+}
+.quote-image img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+.quote-image .quote-text-bg {
+    background-color: var(--innerColour);
+    z-index: 1;
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+   opacity: .65;
+   z-index: -1;
+}
+
+.quote-image .quote-text p {
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.testimonials-inner-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+
+.testimonials-inner-container .quotes {
+    width: 3rem;
+}
+.testimonials-inner-container img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
 }
 /*--------------------------------------------------------------
 # Footer
