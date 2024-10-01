@@ -50,6 +50,9 @@ p {
     z-index: 1;
     position: relative;
   }
+  a.btn-link:hover {
+    color: var(--blue)!important;
+  }
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -370,13 +373,13 @@ p {
     text-transform: uppercase;
 }
 
-.latest-projects .card-body a.btn-link {
+.latest-projects .card-body a.btn-link, .about-us-inner a.btn-link {
     text-decoration: none;
     padding: 0;
     color: var(--gray);
     text-transform: uppercase;
 }
-.latest-projects .card-body a.btn-link svg {
+ a.btn-link svg {
     width: 3rem;
     transition: all .5s ease;
 }
@@ -403,7 +406,7 @@ p {
 .latest-projects .card:hover {
     cursor: pointer;
 }
-.latest-projects .card:hover a.btn-link svg {
+.latest-projects .card:hover a.btn-link svg, a.btn-link:hover svg {
     transform: translateX(.67rem);
 }
 
@@ -432,15 +435,15 @@ p {
 # Accreditations
 --------------------------------------------------------------*/
 
-.our-team {
+.our-team, .about-us-inner  {
     background-color: var(--lightGray);
 }
 
-.our-team .section-title h2 {
+.our-team .section-title h2, .about-us-inner h2 {
     background-color: var(--lightGray);
 }
 
-.our-team p {
+.our-team p , .about-us-inner p {
     margin-bottom: 2rem;
 }
 
@@ -500,7 +503,9 @@ p {
     font-size: 1.125rem;
 }
 
-
+.cutout-white {
+    background-color: #ffffff!important;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
