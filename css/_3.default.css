@@ -17,6 +17,7 @@ p {
     font-weight: 300;
 }
 
+
 .section-title {
     display: flex;
     align-items: center;
@@ -43,7 +44,7 @@ p {
   }
   
   .section-title h2 {
-    background-color: var(--white);
+    background-color: #ffffff;
     padding: 0 1rem;
     font-weight: 400;
     font-size: 1.875rem;
@@ -86,20 +87,18 @@ p {
 }
 
 #main-nav .active {
-    background-color: var(--blue);
+    background-color: var(--yellow);
 }
 
 #main-nav a {
     /* text-transform: uppercase; */
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 300;
     transition: all .3s;
 }
-#main-nav .nav-item:hover a{
-    color: var(--green);
-}
+
 #main-nav .nav-item:active a{
-    color: var(--red);
+    /* color: var(--red); */
 }
 
 /* #main-nav .nav-item {
@@ -135,7 +134,7 @@ p {
         padding-right: calc(var(--bs-gutter-x) * .5);
     }
 
-        .navbar-nav .nav-item, .navbar ul li:first-child {
+        .navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
             padding: 1rem calc(var(--bs-gutter-x) * .5);
         }
 
@@ -245,6 +244,73 @@ p {
     #main-nav .logo-top {
         width: 15rem;
     }
+
+/* Main nav dropdowns  */
+#main-nav .nav-item:hover a:not(#main-nav .dropdown a){
+    /* color: var(--yellow); */
+}
+#main-nav .nav-item:active a:not(#main-nav .dropdown a){
+    /* color: var(--red); */
+}
+#main-nav .dropdown-menu {
+    margin-top: .75rem;
+}
+.navbar-nav .nav-item, .navbar ul li:first-child:not #main-nav .dropdown ul li {
+    padding: 1rem calc(var(--bs-gutter-x) * .5);
+}
+
+#main-nav .dropdown ul {
+    background-color: var(--black);
+    border: none;
+    transition: all .3s;
+}
+
+#main-nav .dropdown a:active:not(#main-nav .dropdown ul li a:active) {
+    color: #ffffff;
+}
+#main-nav .dropdown a:hover:not(#main-nav .dropdown ul li a:hover) {
+    color: var(--lightGray);
+}
+
+
+#main-nav .dropdown-item:active {
+    color: var(--orange);
+    background-color: var(--black);
+}
+#main-nav .dropdown-item:hover {
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+    /* transform-origin: 50% 50%; */
+    vertical-align: -0.1em;
+    margin-top: .2em;
+}
+#main-nav .dropdown-item {
+    padding-top: .35rem;
+}
+#main-nav .dropdown-item:last-of-type {
+    padding-bottom: .35rem;
+}
+#main-nav .nav-item.active.dropdown {
+    background-color: var(--black);
+}
+#main-nav .nav-item.active.dropdown a {
+    color: var(--yellow)!important;
+}
+#main-nav .nav-item.active ul li .dropdown-item {
+    color: #ffffff!important;
+}
+#main-nav {
+z-index: 9;
+}
+
+#main-nav .nav-item.active ul li a.dropdown-item.active {
+    color:var(--yellow)!important;
+    opacity: .68;
+}
 
 /*--------------------------------------------------------------
 # Hero
@@ -371,17 +437,21 @@ p {
 }
 
 .latest-projects .card-title .sub {
-    color: var(--gray);
+    color: var(--lightGray);
     font-weight: 600;
     font-size: 1.25rem;
     text-transform: uppercase;
 }
 
-a.btn-link {
+.latest-projects a.btn-link {
     text-decoration: none;
     padding: 0;
     color: var(--gray);
     text-transform: uppercase;
+}
+a.btn-link {
+    color: var(--gray);
+    text-decoration:none;
 }
  a.btn-link svg {
     width: 3rem;
@@ -450,7 +520,9 @@ a.btn-link {
 .our-team p , .about-us-inner p {
     margin-bottom: 2rem;
 }
-
+.about-us-inner a.btn-link {
+    color: var(--gray);
+}
 
 .testimonials  {
     background-color: var(--innerColour);
@@ -672,15 +744,15 @@ a.btn-link {
     fill: var(--blue);
 }
 .footer-cutout.white svg g {
-    fill: var(--white);
+    fill: #ffffff;
 }
 
 .logo-footer svg g path {
-    fill: var(--white);
+    fill: #ffffff;
 }
 footer {
     background-color: var(--black);
-    color: var(--white);
+    color: #ffffff;
     font-size: .875rem;
 }
 
@@ -690,11 +762,11 @@ footer {
 
 
     footer a span {
-        color: var(--yellow);
+        /* color: var(--yellow); */
     }
 
     footer .footer-title {
-        color: var(--yellow);
+        /* color: var(--yellow); */
         font-weight: 400;
     }
 

@@ -2,6 +2,10 @@
 
 @media only screen and (min-width: 1200px) {
 
+    section.hero.hero-inner {
+        margin-top: -.2rem;
+    }
+
     .styled-line {
         display: block;
         border-top: 4px solid;
@@ -13,19 +17,93 @@
     .section-title h2 {
         font-size: 3rem;
     }
-    #main-nav .nav-div {
+    /* #main-nav .nav-div {
         width: 2px;
         height: 1rem;
         background-color: var(--yellow);
-    }
+    } */
     .logo-top {
         width: 200px;
     }
     #main-nav .active a {
-        color: var(--blue);
+        color: var(--yellow);
    }
    #main-nav .active {
     background-color: var(--black);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+#main-nav .dropdown-toggle {
+    pointer-events: none;
+}
+.dropdown-menu {
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+#main-nav .dropdown-menu {
+    margin-top: 0;
+}
+#main-nav .nav-item.dropdown:hover a:not(#main-nav .nav-item.dropdown:hover ul li a) {
+    color: #ffffff;
+}
+#main-nav .nav-item.dropdown ul li a {
+    color: #ffffff;
+}
+#main-nav .nav-item:hover a{
+    opacity: .98;
+}
+#main-nav .nav-item.dropdown ul li a:hover {
+    color: var(--yellow);
+    background-color: transparent!important;
+}
+#main-nav .dropdown.active {
+    color: var(--yellow);
+}
+#main-nav .dropdown.active ul li a:hover {
+    color: var(--yellow)!important;
+    background-color: transparent!important;
+}
+#main-nav .dropdown ul {
+    background-color: var(--black);
+    padding: .5rem .125rem;
+}
+#main-nav .dropdown-item {
+    padding: .2rem!important;
+}
+/* #main-nav .dropdown-toggle::after {
+    vertical-align: 0;
+} */
+#main-nav .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(-180deg);
+     transform-origin: 50% 50%;
+    /* vertical-align: -0.1em;
+    margin-top: .1em;  */
+
+}
+.companies-sub-menu {
+    background-color: var(--teal);
+}
+.companies-sub-menu a.home-sub {
+    font-size: .875rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.companies-sub-menu .nav-link {
+    padding: .5rem 1rem;
+    font-size: .875rem;
+    color: #ffffff;
+}
+.companies-sub-menu .nav-item.active {
+    background-color: var(--innerColour);
+}
+.companies-sub-menu .nav-item:not(.companies-sub-menu .nav-item.active):hover .nav-link {
+    color: var(--yellow);
+}
+
+.companies-sub-menu .nav-link:last-of-type {
+    /* padding-right: 0; */
 }
 .hero .hero2 {
     width: 35%;
