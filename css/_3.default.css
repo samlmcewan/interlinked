@@ -551,6 +551,38 @@ a.btn-link {
     fill: var(--blue)!important;
 }
 
+.latest-projects-inner {
+    background-color: var(--innerColour);
+    margin-top: 0;
+    padding-top: 5rem;
+}
+.latest-projects-inner h2 {
+    background-color: var(--innerColour);
+    color: #ffffff;
+}
+.latest-projects-inner .section-title .line {
+    background-color: #ffffff;
+}
+.latest-projects-inner .card {
+    background-color: var(--innerColour);
+}
+.latest-projects-inner .card h3, .latest-projects-inner .card p, .latest-projects-inner .card .btn-link, .latest-projects-inner .card .card-title .sub {
+    color: #ffffff;
+}
+.latest-projects-inner .card:hover a.btn-link svg g, .latest-projects-inner .card:hover a.btn-link svg polyline, .latest-projects-inner .card:hover a.btn-link svg rect {
+    fill: var(--lightGray)!important;
+}
+
+.latest-projects-inner .card:hover p, .latest-projects .card:hover h3 {
+    color: var(--lightGray);
+    opacity: .67;
+}
+.latest-projects-inner .card:hover a.btn-link {
+    color: var(--lightGray);
+    opacity: .67;
+}
+
+
 /*--------------------------------------------------------------
 # Accreditations
 --------------------------------------------------------------*/

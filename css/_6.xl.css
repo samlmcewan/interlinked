@@ -295,6 +295,9 @@ padding-top: 0;
 .inner-services .inner-service:nth-child(2n) .row .img-col img {
     margin-bottom: 0;
 }
+.latest-projects-inner {
+    padding-top: 15rem;
+}
 .loops {
     /* margin-top: 3rem; */
 }
