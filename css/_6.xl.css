@@ -258,6 +258,26 @@
     letter-spacing: .2rem;
     margin-bottom: 0;
 }
+.inner-services .inner-service:nth-of-type(1) .row {
+margin-top: 0;
+padding-top: 0;
+}
+.inner-services .inner-service .row {
+    padding-top: 5rem;
+    margin-top: 4rem;
+    justify-content: end;
+}
+.inner-services .inner-service:nth-child(2n) .row {
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+.inner-services .inner-service .text-col {
+    margin-bottom: 5rem;
+}
+.inner-service .img-col img {
+    margin-bottom: -30rem;
+}
 .loops {
     /* margin-top: 3rem; */
 }

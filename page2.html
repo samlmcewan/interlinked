@@ -535,7 +535,8 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6 col-lg-4 col-xl-2 p-5 pt-0 text-center d-flex justify-content-center">
                        <div class="testimonials-inner-container d-flex flex-column justify-content-center align-items-center">
-                        <svg id="svg-id-26-p2tkd" class="quotes"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34.4 28.48"><defs><clipPath id="svg-id-27-81cfu"><path d="M14.73,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.17-1.2,3.4-2.83,3.7-4.89H0V0h14.73M34.4,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.14-1.2,3.35-2.83,3.64-4.89h-3.64V0h14.73Z" style="clip-rule:evenodd; fill:none;"/></clipPath><clipPath id="svg-id-28-l8wuu"><rect x="-549.72" y="-3270.75" width="1133.86" height="4818.9" style="fill:none;"/></clipPath><clipPath id="svg-id-29-3ucoo"><rect x="-549.71" y="-3270.77" width="1133.85" height="4818.9" style="fill:none;"/></clipPath></defs><g id="svg-id-30-56na2"><g style="clip-path:url(#clippath);"><g style="clip-path:url(#clippath-1);"><g style="clip-path:url(#clippath-2);"><path d="M34.4,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.14-1.2,3.35-2.83,3.64-4.89h-3.64V0h14.73Z" style="fill:none; stroke:#115ca8; stroke-miterlimit:10; stroke-width:2px;"/><path d="M14.73,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74C5.77,26.58,3.04,27.82,0,28.48v-6.36c2.17-1.2,3.4-2.83,3.7-4.89H0V0h14.73Z" style="fill:none; stroke:#115ca8; stroke-miterlimit:10; stroke-width:2px;"/></g></g></g></g></svg>
+                        <!-- <svg width="3rem" id="svg-id-26-p2tkd" class="quotes"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34.4 28.48"><defs><clipPath id="svg-id-27-81cfu"><path d="M14.73,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.17-1.2,3.4-2.83,3.7-4.89H0V0h14.73M34.4,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.14-1.2,3.35-2.83,3.64-4.89h-3.64V0h14.73Z" style="clip-rule:evenodd; fill:none;"/></clipPath><clipPath id="svg-id-28-l8wuu"><rect x="-549.72" y="-3270.75" width="1133.86" height="4818.9" style="fill:none;"/></clipPath><clipPath id="svg-id-29-3ucoo"><rect x="-549.71" y="-3270.77" width="1133.85" height="4818.9" style="fill:none;"/></clipPath></defs><g id="svg-id-30-56na2"><g style="clip-path:url(#clippath);"><g style="clip-path:url(#clippath-1);"><g style="clip-path:url(#clippath-2);"><path d="M34.4,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74-2.41,1.83-5.14,3.07-8.18,3.72v-6.36c2.14-1.2,3.35-2.83,3.64-4.89h-3.64V0h14.73Z" style="fill:none; stroke:#115ca8; stroke-miterlimit:10; stroke-width:2px;"/><path d="M14.73,0v7.88c0,4.09-.49,7.47-1.47,10.14-.98,2.66-2.67,4.91-5.08,6.74C5.77,26.58,3.04,27.82,0,28.48v-6.36c2.17-1.2,3.4-2.83,3.7-4.89H0V0h14.73Z" style="fill:none; stroke:#115ca8; stroke-miterlimit:10; stroke-width:2px;"/></g></g></g></g></svg> -->
+                        <img class="quotes" src="/img/quotes.svg" alt="">
                         <img class="pt-3" src="/img/testimonial-1.png" alt="">
                        </div>
                     </div>
@@ -677,6 +678,27 @@
         <script src="/scripts/aos.js"></script>  
         <script>
             AOS.init();
+          </script>
+          <script>
+            // Function to set the height equal to the width of a element
+                function setHeightEqualToWidth(element) {
+                   
+                    var width = element.offsetWidth;
+                    element.style.height = width + "px";
+                }
+
+                var elements = document.querySelectorAll('.inner-service .img-col img');
+                elements.forEach(el => {
+                    setHeightEqualToWidth(el);
+                });
+                var elements2 = document.querySelectorAll('.testimonials-inner-container');
+                elements2.forEach(el => {
+                    setHeightEqualToWidth(el);
+                });
+
+                window.addEventListener('resize', function() {
+                    setHeightEqualToWidth(element);
+                });
           </script>
         <!-- <script>
             const currentYear = new Date().getFullYear();

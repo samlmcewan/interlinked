@@ -57,6 +57,9 @@
     font-style: italic;
 }
 
+.inner-service .text-col {
+    margin-bottom: -2rem;
+}
 
 /* Footer  */
 .footer-cutout svg {

@@ -584,10 +584,26 @@
         <script>
             AOS.init();
           </script>
-        <script>
-            const currentYear = new Date().getFullYear();
-            const yearElement = document.querySelector('#year');
-            yearElement.textContent = currentYear;
-        </script>
+          <script>
+            // Function to set the height equal to the width of a element
+                function setHeightEqualToWidth(element) {
+                   
+                    var width = element.offsetWidth;
+                    element.style.height = width + "px";
+                }
+
+                var elements = document.querySelectorAll('.inner-service .img-col img');
+                elements.forEach(el => {
+                    setHeightEqualToWidth(el);
+                });
+                var elements2 = document.querySelectorAll('.testimonials-inner-container');
+                elements2.forEach(el => {
+                    setHeightEqualToWidth(el);
+                });
+
+                window.addEventListener('resize', function() {
+                    setHeightEqualToWidth(element);
+                });
+          </script>
     </body>
 </html>
