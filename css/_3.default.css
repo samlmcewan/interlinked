@@ -424,6 +424,7 @@ z-index: 9;
     width: 100%;
     overflow: hidden;
     align-items: center;
+    transition: all .3s ease;
 }
 .loop:hover {
     opacity: .67;
@@ -576,7 +577,7 @@ a.btn-link {
     fill: var(--lightGray)!important;
 }
 
-.latest-projects-inner .card:hover p, .latest-projects .card:hover h3 {
+.latest-projects-inner .card:hover p, .latest-projects-inner .card:hover h3 {
     color: var(--lightGray);
     opacity: .67;
 }
