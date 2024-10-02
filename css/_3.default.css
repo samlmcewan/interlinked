@@ -425,6 +425,9 @@ z-index: 9;
     overflow: hidden;
     align-items: center;
 }
+.loop:hover {
+    opacity: .67;
+}
 
 /*--------------------------------------------------------------
 # Quote
@@ -582,6 +585,69 @@ a.btn-link {
     opacity: .67;
 }
 
+.projects-inner .card {
+    position: relative;
+    align-items: end;
+    border-radius: 0;
+    border: 2px solid #ffffff;
+}
+.projects-inner a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.projects-inner .card-body {
+position: absolute;
+top: 50%;
+right: 5%;
+transform: translateY(-50%);
+text-align: right;
+}
+.projects-inner .card-title .sub {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.projects-inner .card-title h3 {
+    font-weight: 300;
+    font-size: calc(1.4rem + .6vw);
+}
+.projects-inner .card-body p {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+.latest-projects .card-img-top {
+    border-radius: 50%;
+}
+.img-overlay2 {
+    width: 100%;
+    height: 100%; 
+    background: rgb(33, 30, 32);
+    background: linear-gradient(98deg, rgba(33, 30, 32, 0) 0%, rgba(33, 30, 32, 0.53) 46%, rgba(33, 30, 32, 1) 87%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.projects-inner .card:hover .card-img-top img {
+    /* opacity: .67; */
+}
+.projects-inner .card:hover .card-img-top::after {
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+
+  .projects-inner .card:hover .card-title h3,   .projects-inner .card:hover .card-title .sub, .projects-inner .card:hover .card-body p {
+    color: var(--innerColour)!important;
+  }
+  .projects-inner .card {
+    height: 100%;
+  }
+  .projects-inner .card .card-img-top {
+    height: 100%;
+  }
+  .projects-inner .card .card-img-top img {
+    min-height: 100%;
+  }
+
 
 /*--------------------------------------------------------------
 # Accreditations
@@ -700,6 +766,9 @@ a.btn-link {
 .breadcrumb a {
     text-decoration: none;
     color: var(--black);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--innerColour)!important;
 }
 /*--------------------------------------------------------------
 # Hero inner 2
