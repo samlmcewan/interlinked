@@ -661,7 +661,7 @@ min-height: unset;
 
 
   .projects-inner-single .text-block::before {
-    color: var(--blue);
+    color: var(--innerColour);
     margin-bottom: .2rem;
    
    min-width: 6.25rem;
