@@ -1,10 +1,18 @@
 /* Extra large devices (large desktops, 1900px and up) */
 
 @media only screen and (min-width: 1900px) {
+    body {
+        font-size: 1.125rem;
+    }
     .hero-inner p {
         top: 46%;
         font-size: 2.35rem;
         line-height: 3.25rem;
         width: 20%;
     }
+    .hero-inner-2 .hero-inner-2-text {
+        margin-top: 15rem;
+    }
+
+
 }

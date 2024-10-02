@@ -12,11 +12,19 @@ body {
     font-family: "Raleway", sans-serif; */
     font-weight: 400;
 }
-
+h2 {
+    font-weight: 200;
+}
 p {
     font-weight: 300;
+    line-height: calc(1rem* 1.75);
 }
-
+.inner-h1 {
+    background-color: var(--innerColour);
+    padding: .75rem 1.25rem;
+    border-radius: 3rem;
+    width: fit-content;
+}
 
 .section-title {
     display: flex;
@@ -87,7 +95,7 @@ p {
 }
 
 #main-nav .active {
-    background-color: var(--yellow);
+    /* background-color: var(--yellow); */
 }
 
 #main-nav a {
@@ -309,8 +317,53 @@ z-index: 9;
 
 #main-nav .nav-item.active ul li a.dropdown-item.active {
     color:var(--yellow)!important;
-    opacity: .68;
+    /* opacity: .68; */
+    background-color: var(--black);
 }
+
+/* Companies sub menu dropdowns  */
+.companies-sub-menu .dropdown ul {
+    background-color: var(--lightGray);
+    border: none;
+    transition: all .3s;
+}
+
+/* .companies-sub-menu .dropdown a:active:not(#main-nav .dropdown ul li a:active) {
+    color: #ffffff;
+} */
+.companies-sub-menu .dropdown a:hover:not(#companies-sub-menu .dropdown ul li a:hover) {
+    color: var(--lightGray);
+}
+
+.companies-sub-menu .dropdown-item:hover {
+    color: var(--yellow);
+    background-color: var(--innerColour);
+}
+
+
+.companies-sub-menu .dropdown-item {
+    padding-top: .35rem;
+}
+.companies-sub-menu .dropdown-item:last-of-type {
+    padding-bottom: .35rem;
+}
+/* .companies-sub-menu .nav-item.active.dropdown {
+    background-color: var(--black);
+} */
+/* .companies-sub-menu .nav-item.active.dropdown a {
+    color: #ffffff!important;
+} */
+.companies-sub-menu .nav-item.active ul li .dropdown-item {
+    color: var(--black);
+}
+.companies-sub-menu {
+z-index: 9;
+}
+
+/* .companies-sub-menu .nav-item.active ul li a.dropdown-item.active {
+    color:var(--yellow)!important;
+    opacity: .68;
+} */
 
 /*--------------------------------------------------------------
 # Hero
@@ -587,11 +640,8 @@ a.btn-link {
 .hero-inner .inner-h1 {
     position: absolute;
     top: 1.5rem;
-    background-color: var(--innerColour);
-    padding: .75rem 1.25rem;
-    border-radius: 3rem;
 }
-.hero-inner .inner-h1 h1 {
+.inner-h1 h1, .inner-h1 p {
     color: #ffffff;
     font-weight: 200;
     text-transform: uppercase;
@@ -601,6 +651,60 @@ a.btn-link {
 
 .cutout-white {
     background-color: #ffffff!important;
+}
+/*--------------------------------------------------------------
+# Inner header and breadcrumbs
+--------------------------------------------------------------*/
+.inner-header {
+    background-color: var(--lightGray)
+}
+.inner-header h1 {
+    color: var(--innerColour);
+    font-weight: 300;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--black);
+}
+/*--------------------------------------------------------------
+# Hero inner 2
+--------------------------------------------------------------*/
+.hero-inner-2 .hero-inner-2-text {
+    background-color: var(--innerColour);
+    border-radius: 46px;
+    margin-top: 5rem;
+    margin-bottom: -5rem;
+    z-index: 9;
+}
+.hero-inner-2 .hero-inner-2-text h2 {
+    color: #ffffff;
+    font-weight: 200;
+}
+.hero-inner-2 .hero-inner-2-text p {
+    color: #ffffff;
+}
+.hero-inner-2 .hero-inner-2-text p:nth-of-type(1) {
+    font-weight: 600;
+}
+.hero-inner-2 .btn-link {
+    color: #ffffff;
+}
+.hero-inner-2 .btn-link:hover {
+    color: #ffffff!important;
+    opacity: .6;
+}
+.hero-inner-2 .btn-link polyline, .hero-inner-2 .btn-link g, .hero-inner-2 .btn-link rect {
+    fill: #ffffff!important
+}
+/*--------------------------------------------------------------
+# Inner-services
+--------------------------------------------------------------*/
+.inner-services {
+    padding-top: 5rem;
+    background-color: var(--lightGray);
+}
+.inner-service .btn-link {
+    text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 # Landing Cards
