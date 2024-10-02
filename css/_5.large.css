@@ -40,6 +40,11 @@
 
     .inner-services .inner-service:nth-child(2n) .row {
         flex-direction: row-reverse !important;
+        align-items: center;
+    }
+
+    .inner-services .inner-service:nth-child(2n) .row .img-col img {
+        margin-bottom: 0;
     }
 
 
