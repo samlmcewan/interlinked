@@ -646,7 +646,40 @@ text-align: right;
   }
   .projects-inner .card .card-img-top img {
     min-height: 100%;
+
   }
+
+  .projects-inner-single .card .card-img-top img {
+min-height: unset;
+  }
+
+
+  .projects-inner-single .text-block p,   .projects-inner-single .text-block li {
+    font-weight: 600;
+  }
+
+
+  .projects-inner-single .text-block::before {
+    color: var(--blue);
+    margin-bottom: .2rem;
+   
+   min-width: 6.25rem;
+}
+.projects-inner-single .text-block:nth-of-type(1):before {
+    content: 'Project';
+}
+.projects-inner-single .text-block:nth-of-type(2):before {
+    content: 'Sector';
+}
+.projects-inner-single .text-block:nth-of-type(3):before {
+    content: 'Services';
+}
+
+.projects-inner-single .card {
+    height: fit-content;
+}
+
+    
 
 
 /*--------------------------------------------------------------
