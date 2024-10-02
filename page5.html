@@ -8,6 +8,7 @@
         <meta name="description" content="">
         
         <!-- CSS  -->
+        <link href='/css/_0.aos.css' rel='stylesheet'>
         <link href='/css/_0.swiper.bundle.css' rel='stylesheet'>
         <link href='/css/_1.bootstrap.min.css' rel='stylesheet'>
         <link href='/css/_2.variables.css' rel='stylesheet'>
@@ -231,13 +232,13 @@
         
 
          <!-- Projects Inner single  -->
-          <section class="latest-projects projects-inner projects-inner-single">
+          <section class="latest-projects projects-inner projects-inner-single mb-5">
 
             <div class="container pb-4">
                 <div class="row g-5 justify-content-center justify-content-lg-between">
                    
                         <!-- Card  -->
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4" data-aos="fade-right" data-aos-duration="1000">
                             <a class="card">
                                
                                 <div class="card-img-top">
@@ -257,7 +258,7 @@
                         <!-- End Card  -->
                    
                       <!-- Project text  -->
-                        <div class="text-blocks col-12 col-lg-8 col-xl-7">
+                        <div class="text-blocks col-12 col-lg-8 col-xl-7" data-aos="fade-left" data-aos-duration="1000">
                             <div class="text-block d-flex flex-column flex-md-row">
                                 <!-- <p>Project</p> -->
                                 <p>The Londoner, the world’s first super boutique hotel in Leicester Square. The vast 16 Storey hotel in the centre of the West End consist of 350-bedrooms, including 15 suites.  It has of an array of amenities including a unique subterranean spa, 2 new luxe Odeon Cinemas,  a state-of-the-art ballroom for up to 1000 guests and a 24-hour residents club. The Hotel also hosts five concept restaurants and lounges including a magnificent rooftop bar.</p>
@@ -490,55 +491,11 @@
         <script src="/scripts/swiper-bundle.min.js"></script>
         <script src="/scripts/swiper.js"></script>
         <script src="/scripts/aos.js"></script>  
+        <script src="/scripts/set-heights.js"></script>  
         <script>
             AOS.init();
           </script>
-          <script>
-            // Function to set the height equal to the width of a element
-                function setHeightEqualToWidth(element) {
-                   
-                    var width = element.offsetWidth;
-                    element.style.height = width + "px";
-                }
-
-                var elements = document.querySelectorAll('.inner-service .img-col img');
-                elements.forEach(el => {
-                    setHeightEqualToWidth(el);
-                });
-                var elements2 = document.querySelectorAll('.testimonials-inner-container');
-                elements2.forEach(el2 => {
-                    setHeightEqualToWidth(el2);
-                });
-
-                var elements3 = document.querySelectorAll('.projects-inner-single .card-img-top img');
-                elements3.forEach(el3 => {
-                    setHeightEqualToWidth(el3);
-                });
-
-                window.addEventListener('resize', function() {
-                    elements.forEach(el => {
-                    setHeightEqualToWidth(el);
-                });
-
-                window.addEventListener('resize', function() {
-                    elements2.forEach(el2 => {
-                        setHeightEqualToWidth(el2);
-                    })
-                });
-
-                window.addEventListener('resize', function() {
-                    elements3.forEach(el3 => {
-                        setHeightEqualToWidth(el3);
-                    })
-                });
-
-                
-                
-                });
-
-
-                
-          </script>
+         
         <!-- <script>
             const currentYear = new Date().getFullYear();
             const yearElement = document.querySelector('#year');
