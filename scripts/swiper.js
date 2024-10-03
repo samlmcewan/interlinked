@@ -65,7 +65,7 @@ const swiper3 = new Swiper('.swiper3', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 3500, 
+    delay: 4000, 
     disableOnInteraction: false,
   },
   slidesPerView: 1,
