@@ -60,5 +60,17 @@ const swiper2 = new Swiper('.swiper2', {
   }
 });
 
+const swiper3 = new Swiper('.swiper3', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3500, 
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+  spaceBetween: 5
+});
+
 
 
