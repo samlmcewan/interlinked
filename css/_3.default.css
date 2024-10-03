@@ -426,10 +426,15 @@ z-index: 9;
     align-items: center;
     transition: all .3s ease;
 }
-.loop:hover {
+/* .loop g circle:hover {
     opacity: .67;
+} */
+.loop g a circle {
+    transition: all .3s ease;
 }
-
+.loop g a:hover circle {
+    fill: #d1d1d1!important;
+}
 /*--------------------------------------------------------------
 # Quote
 --------------------------------------------------------------*/

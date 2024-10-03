@@ -1,0 +1,61 @@
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+    .hero-text h1, .inner-header h1 {
+        /* color: var(--gold); */
+        /* font-size: 1.9rem; */
+    }
+
+    .hero-text-col, .testimonials-text-col {
+        background-color: var(--navy);
+    }
+    .hero-text-container, .testimonials-text-container {
+        height: fit-content;
+    }
+
+    .guide h2, .our-doors h2, .about-us h2, .testimonials h2 {
+        font-size: 2.8rem;
+    }
+    .guide hr {
+        display: none;
+    }
+    .about-us .card svg {
+        height: 80px;
+    }
+    .about-us .card h3 {
+        font-size: 1.2rem;
+    }
+    .testimonials-text p {
+        font-size: 1.125rem;
+    }
+
+    .inner-header .container {
+        margin-bottom: 5em;
+
+    }
+    .inner-header img {
+        margin-bottom: -14em;
+    }
+    .inner-header p {
+        font-size: 1rem;
+    }
+
+    .doors-landing-cards .card h2 {
+        font-size: 2.3rem;
+    }
+    .doors-landing-cards .card .card-header {
+        min-height: 120px;
+    }
+
+    .door-factory-logo {
+        width: 230px!important;
+    }
+        /* Footer - Medium devices */
+    
+        .shfooter .collapse {
+            display: none;
+        }
+  
+    
+}
